@@ -11,7 +11,6 @@ public class Solve
        int x = input.nextInt(); // no of wizards
        int y = input.nextInt(); // percentage needed
        double perc = Math.ceil(n * (y / (double)100));
-//       System.out.println((Math.ceil(n * (y / (double)100))));
        if (perc > x)
            System.out.println((int)(Math.ceil(perc - x))) ;
        else
