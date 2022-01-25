@@ -6,7 +6,6 @@ int main()
     cin >> t; 
     int odds = 0, evens = 0; 
     int lastOddIndex, lastEvenIndex; 
-    vector<int> v(t); 
     int temp; 
     for (int i = 0; i< t; i++)
     {
