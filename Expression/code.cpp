@@ -1,17 +1,20 @@
+/*-----------------------------------------HIMANSHU RANJAN---------------------------------------*/
 #include <bits/stdc++.h>
-using namespace std; 
+using namespace std;
+using ll = long long;
+using ull = unsigned long long;
+using ld = long double;
+#define endl '\n'
+#define deb(x) cerr << (#x) << " is " << (x) << endl;
 int main()
 {
-    vector<int> v(3); 
-    for (int i = 0; i< 3; i++)
-    {
-        cin >> v[i]; 
-    }
-    sort(v.begin(), v.end()); 
-    if (v[0] == v[1] && v[0] == v[2] && v[0] == 1)
-        cout << "3" << endl; 
-    else if (v[0] == 1)
-        cout << v[2] * ( v[1] + v[0]) << endl; 
-    else 
-        cout << accumulate(v.begin(), v.end(), 1, multiplies<int>()); 
+    int a, b, c;
+    cin >> a >> b >> c;
+    int m = a + b + c;
+    int n = (a + b) * c;
+    int o = a * (b + c);
+    int p = a *b * c; 
+    int q = a + b * c; 
+    int r = a * b + c; 
+    cout << max({m, n, o, p});
 }
